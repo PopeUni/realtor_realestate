@@ -41,7 +41,7 @@ return (
         Properties {router.query.purpose}
     </Text>
     <Flex flexWrap="wrap">
-    {properties.map((property) => <Property property={property} />)}
+    {properties.map((property) => <Property property={property} key={property.id} />)}
 
     </Flex>
 
